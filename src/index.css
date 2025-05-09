@@ -1,0 +1,61 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 327 100% 98%;
+    --foreground: 327 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 327 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 327 30% 10%;
+
+    --primary: 327 73% 53%;
+    --primary-foreground: 327 100% 98%;
+
+    --secondary: 327 20% 90%;
+    --secondary-foreground: 327 30% 10%;
+
+    --muted: 327 20% 90%;
+    --muted-foreground: 327 30% 40%;
+
+    --accent: 327 73% 93%;
+    --accent-foreground: 327 30% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 327 20% 85%;
+    --input: 327 20% 85%;
+    --ring: 327 73% 53%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Custom classes for our ice cream store */
+  .kasata-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .kasata-card {
+    @apply rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl bg-white;
+  }
+
+  .kasata-button {
+    @apply rounded-full bg-kasata-500 text-white px-6 py-2 hover:bg-kasata-600 transition-colors duration-300;
+  }
+}
+
